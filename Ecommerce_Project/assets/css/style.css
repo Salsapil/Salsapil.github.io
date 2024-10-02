@@ -1,0 +1,133 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color: #10132C;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #FFFFFF;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #E04F4F;
+}
+
+hr {
+    margin-bottom: 30px;
+}
+
+.actions .btn {
+    /* padding: 10px 20px; */
+    border-radius: 3px;
+    cursor: pointer;
+    margin-left: 10px;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    background-color: #FFFFFF;
+}
+
+.actions button {
+    padding: 10px 20px;
+    font-weight: bold;
+    border: 2px solid #E04F4F;
+    color: #E04F4F;
+}
+
+.actions a {
+    padding: 9px 19px;
+    color: #7C946C;
+    border: 2px solid #7C946C;
+}
+
+.actions button:hover {
+    background-color: #E04F4F;
+    color: #FFFFFF;
+}
+
+.actions a:hover {
+    background-color: #7C946C;
+    color: #FFFFFF;
+}
+
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center; /* Centers the grid */
+}
+
+/* .product-item {
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 15px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.delete-checkbox {
+    margin-bottom: 10px;
+} */
+
+.product-item {
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 35px;
+    width: 250px;
+    height: 150px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    position: relative; /* Necessary for positioning the checkbox inside */
+    text-align: center;
+}
+
+.product-item p {
+    margin: 0.5px 0;
+}
+
+.delete-checkbox {
+    position: absolute; /* Positions the checkbox inside the card */
+    top: 10px; /* Distance from the top of the card */
+    left: 10px; /* Distance from the left of the card */
+    margin: 0; /* Reset margin */
+}
+
+
+@media screen and (max-width: 768px) {
+    .product-item {
+        width: 200px; /* Adjust width for smaller screens */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .product-item {
+        width: 100%; /* Full width for very small screens */
+    }
+}
